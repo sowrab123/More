@@ -15,7 +15,7 @@ def take_item_data():
     return [fruit_name, unit_price, quantity, total_price]
 
  
-# CSV new
+# CSV new =========================================================================================
 def save_item_data(inventory, filename="inventory.csv"):
     with open(filename, 'w', newline="") as file:  # Corrected 'open' syntax
         w = csv.writer(file)
@@ -23,6 +23,7 @@ def save_item_data(inventory, filename="inventory.csv"):
         w.writerows(inventory)
     print(f"Inventory saved to {filename}.\n")
 
+# CSV new =========================================================================================
 
 # Add
 def add_item_to_inventory(inventory, item_data):
@@ -36,7 +37,7 @@ def add_item_to_inventory(inventory, item_data):
     # Add new item if it does not exist
     inventory.append(item_data)
     print(f"Added {item_data[0]} to the inventory.\n")
-    save_item_data(inventory) # CSV
+    save_item_data(inventory) # CSV ========================================
     
     
 # summary
@@ -58,7 +59,7 @@ def delete_item(inventory):
         if item[0].lower() == fruit_to_delete.lower():
             inventory.remove(item)
             print(f"{fruit_to_delete} has been deleted from the inventory.\n")
-            save_item_data(inventory) # CSV 
+            save_item_data(inventory) # CSV ========================================
             return
     print(f"{fruit_to_delete} not found in the inventory.\n")
 
