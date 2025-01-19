@@ -1,0 +1,15 @@
+// http_proxy="http://rqmnrvak-rotate:ps7bikiydmaw@207.244.217.165:6712"
+// https_proxy="http://rqmnrvak-rotate:ps7bikiydmaw@207.244.217.165:6712"
+
+
+// proxies = {
+//     "http": "http://rqmnrvak-rotate:ps7bikiydmaw@207.244.217.165:6712",
+//     "https": "http://rqmnrvak-rotate:ps7bikiydmaw@207.244.217.165:6712",
+// }
+
+
+
+proxies = {
+    "http": "http://username:password@proxy_address:proxy_port",
+    "https": "http://username:password@proxy_address:proxy_port"
+}
